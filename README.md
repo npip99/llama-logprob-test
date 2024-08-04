@@ -10,15 +10,13 @@ In this work, we have evaluated different chunking strategies on the LegalBenchC
 
 Here are our main contributions:  
 
--   We created a Question Answering Dataset where the answer consists of a list of Sentence Level chunks found in the corpus. This dataset will be our ground truth when looking at the signal to noise metric.
--   We tested 3 main chunking strategies, each with a variety of hyperparameters:
-
--   NaiveChunk: fixed size chunks of varying length with varying overlap ratio
--   SemanticChunk: embedding similarity based chunks with varying threshold parameter
--   LlamaChunk Algorithm: prompt-based chunks created by Llama-70B
-
--   For the LlamaChunk Algorithm, we output the logprobs to chunk at a certain level of the document.
--   Finally, we create a hyperparameter tuning pipeline for the NaiveChunk method to tune the chunk size and overlap parameters. We will release the code and allow anyone to tune these parameters for their use case and benchmarks
+- We created a Question Answering Dataset where the answer consists of a list of Sentence Level chunks found in the corpus. This dataset will be our ground truth when looking at the signal to noise metric.
+- We tested 3 main chunking strategies, each with a variety of hyperparameters:
+  - NaiveChunk: fixed size chunks of varying length with varying overlap ratio
+  - SemanticChunk: embedding similarity based chunks with varying threshold parameter
+  - LlamaChunk Algorithm: prompt-based chunks created by Llama-70B
+- For the LlamaChunk Algorithm, we output the logprobs to chunk at a certain level of the document.
+- Finally, we create a hyperparameter tuning pipeline for the NaiveChunk method to tune the chunk size and overlap parameters. We will release the code and allow anyone to tune these parameters for their use case and benchmarks
 
 # RAG with Llama
 
