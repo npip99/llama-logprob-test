@@ -1,0 +1,9 @@
+.venv
+__pycache__
+models
+logs
+prev
+*.swp
+*.csv
+*.json
+t
